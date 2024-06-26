@@ -24,7 +24,7 @@ class UserController extends Controller
     // LOG IN
 
     public function login(){
-        return view('login.index');
+        return view('views.index');
     }
 
     public function processLogin(Request $request)
