@@ -7,7 +7,7 @@
         <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
             <div class="col-lg-4 col-md-6 col-sm-8">
                 <div class="card shadow-lg rounded p-4">
-                    <img src="https://s3.amazonaws.com/access-resources/evantaconnect/production/sponsor_logos/20763.png?6352" alt="Logo" class="d-inline-block align-text-top img-fluid">
+                    <img src="{{ asset('img/bluecat.png')}}" alt="Logo" class="d-inline-block align-text-top img-fluid">
                     <br>
                     <form action="/process/login" method="post">
                         @csrf

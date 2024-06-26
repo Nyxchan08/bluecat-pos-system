@@ -17,8 +17,8 @@
     <div class="row justify-content-center mt-3">
         <div class="col-lg-3 col-md-12">
             <div id="users_profile">
-                <a href="{{ $user->user_image ? asset('storage/img/user/' . $user->user_image) : 'https://i.vimeocdn.com/portrait/17883671_640x640'}}">
-                    <img src="{{ $user->user_image ? asset('storage/img/user/' . $user->user_image) : 'https://i.vimeocdn.com/portrait/17883671_640x640'}}" alt="User Profile">
+                <a href="{{ $user->user_image ? asset('storage/img/user/' . $user->user_image) : asset('img/defaultimg.avif')}}">
+                    <img src="{{ $user->user_image ? asset('storage/img/user/' . $user->user_image) : asset('img/defaultimg.avif')}}" alt="User Profile">
                 </a>
                 <h6 style="margin-left: 26%; margin-top: 5%">User's Profile</h6>
                 <p style="margin-left: 26%;">ID: {{ $user->user_id }}</p>

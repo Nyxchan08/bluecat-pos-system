@@ -25,7 +25,7 @@
                 @foreach ($products as $product)
                 
                 <tr onclick="window.location='/product/show/{{$product->product_id}}';" style="cursor:pointer;">
-                    <td><img src="{{ $product->product_image ? asset('storage/img/product/' . $product->product_image) : 'https://i.vimeocdn.com/portrait/17883671_640x640'}}" alt="Product Image" style="height: 130px; width: 130px;"> </td>
+                    <td><img src="{{ $product->product_image ? asset('storage/img/product/' . $product->product_image) : asset('img/defaultimg.avif')}}" alt="Product Image" style="height: 130px; width: 130px;"> </td>
                     <td>{{ $product->product_name }}</td>
                     <td>{{ $product->sku }}</td>
                     <td>{{ $product->price }}</td>
