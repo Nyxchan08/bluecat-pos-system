@@ -1,0 +1,9 @@
+# Query: example-ap
+# ContextLines: 1
+
+1 result - 1 file
+
+package-lock.json:
+  1  {
+  2:     "name": "pos-system",
+  3      "lockfileVersion": 3,

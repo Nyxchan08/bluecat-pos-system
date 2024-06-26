@@ -1,0 +1,346 @@
+*{
+    font-family: "Poppins", sans-serif !important;
+    font-size: 14px !important;
+}
+
+body{
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+}
+
+/* FOR NAVBAR */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    background-color: #ffffff; 
+    color: rgb(19, 18, 18); 
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px; 
+    border-bottom: solid 1px rgb(226, 226, 226);
+}
+
+
+/*FOR NAV SEARCH*/
+#navsearch{
+    margin: 0 auto; 
+    max-width: 400px; 
+    width: 500px;
+    
+}
+
+/* Default styles for the sidebar */
+#sidebar-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+    overflow: auto;
+    border-right: solid 1px rgb(226, 226, 226);
+    transition: transform 0.3s ease;
+}
+
+#main-content {
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #sidebar-container {
+        transform: translateX(-200px); /* Initially hide the sidebar */
+    }
+
+    #main-content {
+        margin-left: 0; /* Adjust main content to take full width */
+    }
+
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #navsearch {
+        display: none !important;
+    }
+}
+
+
+
+#sidebar-toggle {
+    display: none; 
+    cursor: pointer;
+    padding: 10px;
+}
+
+#sidebar-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: transform 0.3s ease;
+}
+
+
+/*FOR THE SIDEBAR UL LI A*/
+#sidebar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar ,li{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#sidebar img {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+/*FOR USER INDEX*/
+.content-list{
+    margin-top: 5%;
+}
+
+/*FOR CREATE BUTTON*/
+#create-button{
+    position: absolute;
+    right: 30px;
+    margin-top: 18px;
+}
+#create-button img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#create-button a{
+    text-decoration: none;
+    color:  rgb(53, 51, 51);
+}
+
+
+/*FOR GROUP BUTTON*/
+#group-button{
+    position: absolute;
+    right: 30px;
+    margin-top: 18px;
+}
+#group-button img{
+    height: 20px;
+    width: 20px;
+    margin-right: 2px;
+}
+
+#group-button a{
+    text-decoration: none;
+    color:  rgb(53, 51, 51);
+}
+
+#group-button ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#group-button li {
+    display: inline;
+    margin-right: 5px; 
+}
+
+td img{
+    height: 10px;
+    width: 10px;
+}
+
+
+
+
+/*FOR  SHOW FORM*/
+#show-container{
+    margin: 5rem auto !important;
+    border: solid 1px rgb(226, 226, 226) !important;
+    max-width: 100% !important;
+    border-radius: 5px;
+}
+
+
+
+/*FOR PRODUCT_PROFILE*/
+#product_profile img{
+    height: 50%;
+    width: 100%;
+    border: solid 5px rgb(226, 226, 226);
+    border-radius: 2px;
+    
+}
+
+
+
+/*FOR USERS PROFILE*/
+#users_profile img{
+    height: 50%;
+    width: 100%;
+    border: solid 5px rgb(226, 226, 226);
+    border-radius: 2px;
+    
+}
+
+/*FOR THE RIGHT SIDE BAR */
+
+#right-sidebar-order-container {
+    position: fixed;
+    right: 1%;
+    max-width: 27rem;
+    
+}
+
+ #card-id-order{
+    background: rgb(3, 3, 5);
+    color: #ffffff;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    
+    
+}
+
+/* #body-card{
+    background: rgb(255, 255, 255);
+} */
+
+#orderItems {
+    height: 20rem !important;
+    overflow-y: auto;
+}
+
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: solid 1px #ccc;
+    
+}
+
+.order-header-item, .order-item-name, .order-item-quantity, .order-item-price, .order-item-action {
+    flex: 1;
+    text-align: center;
+}
+
+#order-delete-btn {
+    border: none;
+    background: none;
+    height: 20px;
+}
+
+
+/*FOR PRODUCT LIST IN THE STORE*/
+#product-list-container{
+    max-width: 100%;
+}
+
+.product-list .card {
+    width: 100%; /* Full width of the container */
+    height: 250px; /* Fixed height for the card */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.product-list .card img {
+    width: 100%;
+    height: 150px; /* Fixed height for the image */
+    object-fit: fill;
+    padding: 10px;
+    border-radius: 2px;
+    
+}
+
+.product-price-card .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.product-price-card .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Truncate long text */
+}
+
+
+
+.modal-header {
+    border-bottom: none;
+    justify-content: center;
+}
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.modal-body {
+    padding: 2rem;
+}
+#quantityInput {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.keypad-buttons button {
+    width: 30%;
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+.keypad-buttons .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.keypad-buttons .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+
+@media (max-width: 767.98px) {
+    #orderItems {
+        height: 3rem !important;
+    }
+    #right-sidebar-order-container {
+        top: 4.3rem;
+        max-width: 28.6rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
